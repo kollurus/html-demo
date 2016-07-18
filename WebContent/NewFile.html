@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>demopage</title>
+<script>
+function submitFunction()
+{
+var x=document.forms["my Form"]["username"].value;
+var y=document.forms["my Form"]["password"].value;
+if(x==null||x==""||y==null||y=="")
+	{
+	alert("both fields can't be empty.");
+	}
+else{
+	if(x=="webi")
+		{
+		if(y=="12345")
+			{
+			alert("login successful");
+			}
+		else{
+			alert("password donot match");
+			
+		}
+		
+	else{
+		("user doesnt exist")
+		}
+}
+	}
+}
+</script>
+</head>
+<body>
+<header>
+<a href="#">My logo</a>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<form name= "my Form " onsubmit="submitFunction()">
+username:<input type="text" name="username"><br>
+Password:<input type="password" name="pwd"><br>
+<input type="submit" value="submit">
+<p>blah</p>
+<p style="background-color:red">blah</p>
+<button type= "button">here</button>
+<!-- Single statement block  --> 
+@Code dim myMessage = "Hello World" End Code
+ 
+<!-- Inline expression or variable --> 
+<p>The value of myMessage is: @myMessage</p> 
+ 
+<!-- Multi-statement block --> 
+@Code
+dim greeting = "Welcome to our site!" 
+dim weekDay = DateTime.Now.DayOfWeek 
+dim greetingMessage = greeting & " Today is: " & weekDay
+End Code 
+<p>The greeting is: @greetingMessage</p>
+
+
+div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+<center>
+<h2>welcome</h2>
+</center>
+
+</form>
+
+</nav>
+</header>
+<article>
+<section>
+sections here
+</section>
+<h1>Welcome</h1>
+this is a demo page
+</article>
+<h1>Welcome</h1>
+<h1>LOGIN</h1>
+<footer>@ all right reserved</footer>
+</body>
+</html>
